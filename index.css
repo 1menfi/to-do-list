@@ -65,6 +65,7 @@ input {
 }
 
 button {
+  color: #002423;
   border: none;
   outline: none;
   padding: 16px 50px;
@@ -72,8 +73,12 @@ button {
   font-size: 16px;
   border-radius: 40px;
   cursor: pointer;
-
 }
+
+button:visited {
+  color: #002423;
+}
+
 
 ul li {
   list-style: none;
@@ -144,3 +149,23 @@ ul li span:hover {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .todo-app {
+    max-width: 90%;
+    padding: 20px 15px 50px; /* Adjust padding for smaller screens */
+  }
+
+  input[type="text"] {
+    width: 80%; 
+    font-size: 12px !important; 
+  }
+
+  button {
+    padding: 10px 30px; 
+    font-size: 14px; 
+  }
+
+  ul li {
+
+  }
+}
