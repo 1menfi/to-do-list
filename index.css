@@ -158,7 +158,7 @@ ul li span:hover {
   input[type="text"] {
     width: 80%; 
     font-size: 12px !important; 
-    touch-action: manipulation;
+    touch-action: none;
   }
 
   button {
