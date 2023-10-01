@@ -33,12 +33,6 @@
   margin-left: 10px;
 }
 
-body {
-
-  background-color: #00FAF6;
-
-}
-
 h1 {
   font-weight: 800;
   font-size: 50px;
@@ -179,6 +173,3 @@ ul li span:hover {
     padding-right: 30px;
   }
 }
-
-
-
