@@ -1,5 +1,6 @@
 const inputBox = document.getElementById("new-task"); 
 const listContainer = document.getElementById("list-container"); 
+const audio = new Audio("sound.mp3");
 
 function addTask() {
   if(inputBox.value === ''){
@@ -12,6 +13,7 @@ function addTask() {
     let span = document.createElement("span"); 
      span.innerHTML = "\u00d7"; 
      li.appendChild(span);
+     audio.play();
   }
   inputBox.value = ''; 
   saveData();
@@ -36,3 +38,11 @@ function showTask(){
 }
 
 showTask(); 
+
+const clickbutton = document.getElementById("clickbutton");
+
+function playclicksound(){
+  audio.play();
+}; 
+
+clickbutton.addEventListener("click", playclicksound);
